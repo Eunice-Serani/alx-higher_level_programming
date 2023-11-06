@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_python_list_info -  Function that prints some basic
+ * print_python_list_info - This shows a function that prints some basic
  * info about Python lists.
  * @p: A PyObject list.
  */
