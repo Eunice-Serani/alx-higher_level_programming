@@ -9,5 +9,5 @@ def magic_calculation(a, b):
 			script += (a ** b) / q
 		except Exception:
 			script = a + b
-
-	return (script)
+			break
+	return script
