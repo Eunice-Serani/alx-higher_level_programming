@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def magic_calculation(a, b):
 	script = 0
-	for q in range(1, 3):
+	for i in range(1, 3):
 		try:
-			if q > a:
+			if i > a:
 				raise Exception('Too far')
 
-			script += (a ** b) / q
+			script += (a ** b) / i
 		except Exception:
 			script = a + b
-			break
+
 	return script
