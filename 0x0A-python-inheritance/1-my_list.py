@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# my_list
 """
 Implements a class that inherits from list
 """
