@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""A module that
+"""
+A module that:
 - fetches https://alx-intranet.hbtn.io/status.
 - and uses a urlib package
 """
 import urllib.request
 
 if __name__ == '__main__':
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-        content = response.read()
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as resp:
+        content = resp.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
         print("\t- content: {}".format(content))

@@ -6,7 +6,8 @@
 - displays the body of the response (decoded in utf-8)
 """
 import sys
-from urllib import parse, request
+import urllib.parse
+import urllib.request
 
 
 if __name__ == "__main__":
