@@ -9,11 +9,10 @@ This implements a script that:
 
 if __name__ == "__main__":
     import sys
-    import urllib.request
-    import urllib.error
-    
+    from urllib import request, error
+
     try:
-        with request.urlopen(sys.argv[1]) as resp:
-            print(resp.read().decode('UTF-8'))
+        with request.urlopen(sys.argv[1]) as res:
+            print(res.read().decode('UTF-8'))
     except error.HTTPError as e:
         print('Error code:', e.code)
