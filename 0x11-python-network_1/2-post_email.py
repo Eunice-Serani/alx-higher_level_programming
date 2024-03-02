@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This implements a script that:
+"""
+This implements a script that:
 - takes in a URL
 - sends a POST request to the passed URL
 - takes email as a parameter
@@ -15,6 +16,6 @@ if __name__ == "__main__":
     value = {"email": sys.argv[2]}
     data = urllib.parse.urlencode(value).encode("ascii")
 
-    req = urllib.request.Request(url, data)
-    with urllib.request.urlopen(request) as response:
-        print(response.read().decode("utf-8"))
+    request = urllib.request.Request(url, data)
+    with urllib.request.urlopen(request) as res:
+        print(res.read().decode("utf-8"))
